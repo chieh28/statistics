@@ -127,3 +127,6 @@ def prepare_list(f_data):
         all_list.append(sta_val_dic[sta_val][1])
 
     return all_list
+
+def all_title(f_data):
+    return list(f_data.head(0))
