@@ -1,5 +1,5 @@
 import argparse
-from processfile import read_file, get_file_name, creat_csv_file, creat_file, move_file
+from processfile import read_xlsx_file, get_file_name, creat_csv_file, creat_file, move_file
 from statistic import prepare_list, all_title
 from visualization import creat_boxplot
 
@@ -20,7 +20,7 @@ def __main__():
     creat_file(filename + "/")
     
     #creat statistical csv file
-    f_data = read_file(import_file)
+    f_data = read_xlsx_file(import_file)
     all_list = prepare_list(f_data)   
     creat_csv_file(filename, all_list)
 

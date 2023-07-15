@@ -4,8 +4,13 @@ import shutil
 import os
 
 
-def read_file(file):
+def read_xlsx_file(file):
     f_data = pd.read_excel(file)
+
+    return f_data
+
+def read_csv_file(file):
+    f_data = pd.read_csv(file)
 
     return f_data
 
