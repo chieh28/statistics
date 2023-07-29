@@ -58,7 +58,7 @@ def __main__():
 
 
 
-    cross_tab_list = [["", "NOT Diabetes", "Diabetes", "Total"], 
+    cross_tab_list = [["", "NO Diabetes", "Diabetes", "Total"], 
                 [col_name + " lower than " + str(standard), count_corss_number(classify_data, [0, 0]), count_corss_number(classify_data, [0, 1]), count_total_number(classify_data, f"new_{col_name}", 0)],
                 [col_name + " higher than " + str(standard), count_corss_number(classify_data, [1, 0]), count_corss_number(classify_data, [1, 1]), count_total_number(classify_data, f"new_{col_name}", 1)],
                 ["Total", count_total_number(classify_data, "Outcome", 0), count_total_number(classify_data, "Outcome", 1), ""]]
